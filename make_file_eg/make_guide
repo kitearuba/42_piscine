@@ -1,0 +1,142 @@
+### Detailed Explanation
+
+#### Variables
+```makefile
+NAME = recursive
+CC = cc
+CFLAGS = -Wall -Wextra -Werror -I../../include
+SRC = ft_recursive_factorial.c ../../src/utils.c
+OBJ_DIR = build
+OBJ = $(SRC:%.c=$(OBJ_DIR)/%.o)
+DEP = $(OBJ:.o=.d)
+```
+- `NAME = recursive`: Sets the name of the final executable.
+- `CC = cc`: Specifies the C compiler to use.
+- `CFLAGS = -Wall -Wextra -Werror -I../../include`: Defines compiler flags, including warnings and the include path for header files.
+- `SRC = ft_recursive_factorial.c ../../src/utils.c`: Lists the source files.
+- `OBJ_DIR = build`: Specifies the directory where object files will be stored.
+- `OBJ = $(SRC:%.c=$(OBJ_DIR)/%.o)`: Converts the source file paths into corresponding object file paths within the `build` directory.
+- `DEP = $(OBJ:.o=.d)`: Converts object file paths to dependency file paths.
+
+#### Default Target
+```makefile
+all: $(NAME)
+```
+- `all: $(NAME)`: The default target. When you run `make`, it builds the target specified by `$(NAME)`.
+
+#### Linking Rule
+```makefile
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $@
+```
+- `$(NAME): $(OBJ)`: This target builds the final executable by linking the object files.
+- `$(CC) $(OBJ) -o $@`: The command to link the object files into the executable. `$@` represents the target name (`recursive`).
+
+#### Compiling Rule
+```makefile
+$(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
+```
+- `$(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)`: A pattern rule to compile source files into object files. It ensures that object files are placed in the `build` directory.
+- `@mkdir -p $(dir $@)`: Ensures that the necessary directories exist. The `@` suppresses the command output.
+- `$(CC) $(CFLAGS) -MMD -MP -c $< -o $@`: Compiles the source file (`$<`) into an object file (`$@`), generating a dependency file (`-MMD -MP`).
+
+#### Directory Creation Rule
+```makefile
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+```
+- `$(OBJ_DIR):`: Creates the `build` directory if it does not exist.
+
+#### Include Dependency Files
+```makefile
+-include $(DEP)
+```
+- `-include $(DEP)`: Includes the dependency files if they exist. This ensures that changes in header files trigger recompilation.
+
+#### Clean Targets
+```makefile
+clean:
+	rm -rf $(OBJ_DIR)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+```
+- `clean`: Removes the `build` directory, which contains object files and dependency files.
+- `fclean`: Performs a `clean` and then removes the executable.
+- `re`: Cleans everything and then rebuilds the project.
+
+#### Phony Targets
+```makefile
+.PHONY: all clean fclean re
+```
+- `.PHONY: all clean fclean re`: Declares the listed targets as phony, preventing conflicts with files of the same name.
+
+### Simple Version of the Makefile
+
+Here’s a simplified version of the Makefile that accomplishes the same task without handling object files and dependencies:
+
+```makefile
+# Variables
+NAME = recursive
+CC = cc
+CFLAGS = -Wall -Wextra -Werror -I../../include
+SRC = ft_recursive_factorial.c ../../src/utils.c
+
+# Default target to build the executable
+all: $(NAME)
+
+# Rule to compile and link the executable
+$(NAME):
+	$(CC) $(CFLAGS) -o $@ $(SRC)
+
+# Clean target to remove the executable
+clean:
+	rm -f $(NAME)
+
+.PHONY: all clean
+```
+
+### Explanation of the Simple Version
+
+1. **Variables:**
+   - `NAME = recursive`: The name of the output executable.
+   - `CC = cc`: The C compiler to use.
+   - `CFLAGS = -Wall -Wextra -Werror -I../../include`: Compiler flags.
+   - `SRC = ft_recursive_factorial.c ../../src/utils.c`: Source files.
+
+2. **Default Target (`all`):**
+   - `all: $(NAME)`: Builds the target specified by `$(NAME)`.
+
+3. **Linking Rule (`$(NAME)`):**
+   - `$(NAME):`: Compiles and links the source files into the `recursive` executable.
+   - `$(CC) $(CFLAGS) -o $@ $(SRC)`: Command to compile and link the source files. `$@` represents the target name (`recursive`).
+
+4. **Clean Target:**
+   - `clean:`: Removes the `recursive` executable.
+   - `rm -f $(NAME)`: Command to remove the executable.
+
+5. **Phony Targets:**
+   - `.PHONY: all clean`: Declares `all` and `clean` as phony targets.
+
+### Usage
+
+1. **Build the Project:**
+   ```sh
+   make
+   ```
+
+2. **Run the Executable:**
+   ```sh
+   ./recursive
+   ```
+
+3. **Clean the Build Files:**
+   ```sh
+   make clean
+   ```
+
+This simplified Makefile is easier to understand and maintain for small projects or quick tasks. However, it does not handle object files or dependencies, making it less suitable for larger or more complex projects.

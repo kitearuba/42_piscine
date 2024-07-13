@@ -53,7 +53,6 @@ Included in this repository is a folder named `subjects` containing most of the 
     ├── c01_subject.pdf
     └── ...
 ```
- the subject PDFs to understand how to compile and run the exercises.
 
 ## Ongoing Development
 

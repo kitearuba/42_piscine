@@ -114,10 +114,6 @@ int find_value_in_file(char *filename, int target)
     return (found);
 }
 
-// The ft_verify_number function and its recursive logic must be split or revised 
-// to fit within the Norminette rules, particularly the 25-line limit per function.
-// Consider breaking down the logic into smaller helper functions if necessary.
-
 int main(int argc, char *argv[])
 {
     char *error = "Error on input";

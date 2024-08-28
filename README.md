@@ -120,8 +120,13 @@ With this enhanced `README.md`, we’ve added:
 
 Let me know if you'd like to further enhance anything or adjust any content!
 
+---
+
 ## 👨‍💻 **Author**
 
-**chrrodri** - _42 Barcelona_
+**chrrodri**  
+_42 Barcelona_
+
+[GitHub Profile](https://github.com/kitearuba)
 
 ---

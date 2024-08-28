@@ -96,3 +96,9 @@ A big thank you to:
 Feel free to explore the repository and review the various exercises and projects. I hope you find them as engaging and challenging as I did during the 42 Piscine. If you're working through your own 42 journey, good luck and happy coding! 🚀
 
 ---
+
+## 👨‍💻 **Author**
+
+**chrrodri** - _42 Barcelona_
+
+---

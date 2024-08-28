@@ -1,101 +1,124 @@
 ---
 
-# 🏊‍♂️ **42 Piscine Repository**
+# 🏊‍♂️ **42 Piscine Repository**  
 
-Welcome to my **42 Piscine Repository**! This repository contains various exercises and projects that I completed during my time at the 42 coding school. Below, you'll find an overview of the contents, including shell exercises, C programming exercises, rush projects, and more.
+![42 Project](https://img.shields.io/badge/42-Project-blue?style=flat-square) ![C Programming](https://img.shields.io/badge/Language-C-brightgreen?style=flat-square) ![Shell Scripting](https://img.shields.io/badge/Shell-Scripting-yellow?style=flat-square)
+
+Welcome to my **42 Piscine Repository**! This repository contains the various exercises and projects completed during my time at **42 School**. Here, you'll find Shell scripts, C programming exercises, Rush projects, and related subject documents. Feel free to explore and learn from my progress.
 
 ---
 
-## 📚 **Contents**
+## 📑 **Table of Contents**
 
-### 🐚 **Shell Exercises**
-This section contains all of my **shell exercises** from the 42 Piscine. These exercises helped me become familiar with the Unix shell, covering:
-- Basic commands
-- Shell scripting
+1. [📚 Shell Exercises](#-shell-exercises)
+2. [💻 C Programming Exercises](#-c-programming-exercises)
+3. [🚀 Rush Projects](#-rush-projects)
+4. [📂 Subjects Folder](#-subjects-folder)
+5. [🔧 Ongoing Development](#-ongoing-development)
+6. [🤝 Contributing](#-contributing)
+7. [🙌 Acknowledgements](#-acknowledgements)
+8. [🎉 Final Thoughts](#-final-thoughts)
+
+---
+
+## 📚 **Shell Exercises**
+
+This section contains my **Shell exercises** from the **42 Piscine**, where I learned to master:
+- Unix shell basics
 - File manipulation
+- Shell scripting
 
-### 💻 **C Programming Exercises**
-Here you'll find my solutions for the C programming exercises. Below is a brief summary of the progress:
-- **C Exercises up to C5:** These exercises include basic programming concepts such as loops, conditions, arrays, and functions.
-- **Mostly completed up to C2:** Most of the exercises up to C2 are done, showcasing fundamental skills in C programming.
-
-### 🚀 **Rush Projects**
-The **Rush Projects** are intensive coding challenges typically spanning over a weekend. These projects are designed to test our ability to work under pressure and deliver functional software in a short time frame.
-- **Rush00:** Completed perfectly and fully functional.
-- **Rush02:** Partially completed but still a valuable learning experience.
-
-### 📂 **Subjects Folder**
-The repository includes a `subjects` folder that contains most of the subject PDFs. These documents provide detailed instructions and requirements for each exercise and project.
+Each exercise helped me deepen my understanding of the powerful Unix shell environment, from simple commands to more complex scripts.
 
 ---
 
-## 🗂️ **Repository Structure**
+## 💻 **C Programming Exercises**
+
+The **C Programming** section showcases my journey through the C language, covering core concepts such as:
+- **Control structures**: Loops, conditions
+- **Data structures**: Arrays, strings, and pointers
+- **Functions**: Creating and manipulating user-defined functions
+
+### **Progress Overview**:
+- **C00 to C05 Exercises**: Comprehensive solutions focusing on fundamental C programming skills.
+- **Completion up to C02**: The majority of exercises up to C02 are complete, demonstrating proficiency in key topics such as arrays, conditions, and loops.
+
+---
+
+## 🚀 **Rush Projects**
+
+**Rush projects** are weekend-long sprints where we tackle challenging problems under tight deadlines. These projects test not only our coding skills but also our ability to manage stress and work efficiently under pressure.
+
+- **Rush00**: This project is fully completed and functions as intended.
+- **Rush02**: This project is partially completed, with room for improvement, but still offers valuable insights and learning opportunities.
+
+---
+
+## 📂 **Subjects Folder**
+
+The `subjects` folder contains the official documentation for various exercises and projects. These PDFs offer detailed instructions, examples, and requirements for each task. By reviewing these documents, you can gain a deeper understanding of the project expectations.
+
+---
+
+## 🛠️ **Ongoing Development**
+
+This repository is a work in progress, and I will continue to add new exercises and projects as I complete them. Stay tuned for more updates and improvements as I dive deeper into C programming and other concepts covered by the 42 curriculum!
+
+---
+
+## 🛠️ **Technologies Used**
+
+- **Languages**: C, Bash
+- **Tools**: GCC, Vim, Git
+- **Platform**: Unix/Linux
+
+These technologies were key to building and testing the various exercises and projects in this repository.
+
+---
+
+## 🚀 **How to Use**
+
+You can clone this repository and explore the exercises yourself:
 
 ```bash
-.
-├── shell_exercises
-│   ├── exercise1.sh
-│   ├── exercise2.sh
-│   └── ...
-├── c_exercises
-│   ├── c00
-│   │   ├── exercise1.c
-│   │   └── ...
-│   ├── c01
-│   │   ├── exercise1.c
-│   │   └── ...
-│   ├── c02
-│   │   ├── exercise1.c
-│   │   └── ...
-│   └── c03
-│       ├── exercise1.c
-│       └── ...
-├── rush00
-│   ├── main.c
-│   └── ...
-├── rush02
-│   ├── main.c
-│   └── ...
-└── subjects
-    ├── shell_subject.pdf
-    ├── c00_subject.pdf
-    ├── c01_subject.pdf
-    └── ...
+git clone https://github.com/your-repo/42-piscine.git
+cd 42-piscine
 ```
 
-This structured layout makes it easy to explore individual exercises and projects across different stages of the 42 Piscine.
-
----
-
-## 🔧 **Ongoing Development**
-
-I'm actively working on expanding this repository. As I progress through more exercises and projects, I'll continue adding updates. Stay tuned for new challenges and improvements!
+You can compile and run the C projects or execute the shell scripts directly from your terminal.
 
 ---
 
 ## 🤝 **Contributing**
 
-Contributions are welcome! If you have suggestions for improvements or spot any issues, feel free to:
-- **Open an issue** to report a bug or suggest an enhancement.
-- **Submit a pull request** with your improvements or fixes.
-
-Your contributions are appreciated and will help enhance the overall quality of this repository!
+Contributions are always welcome! If you find any issues, have suggestions for improvements, or want to enhance the projects, feel free to:
+- **Open an Issue**: Report any bugs or request new features.
+- **Submit a Pull Request**: Share your improvements with the community.
 
 ---
 
 ## 🙌 **Acknowledgements**
 
-A big thank you to:
-- **42 School** for providing such an intense and rewarding learning experience.
-- **My peers** for their collaboration, encouragement, and support throughout this journey.
+- **42 School**: For providing a unique and challenging learning experience.
+- **My peers**: For their encouragement, support, and collaboration throughout the Piscine.
+
+I am grateful to be part of such an incredible learning journey. 🙏
 
 ---
 
 ## 🎉 **Final Thoughts**
 
-Feel free to explore the repository and review the various exercises and projects. I hope you find them as engaging and challenging as I did during the 42 Piscine. If you're working through your own 42 journey, good luck and happy coding! 🚀
+Feel free to browse the repository and check out the various exercises and projects I've worked on. This repository is a reflection of my growth as a programmer, and I hope you find it as insightful and educational as I did. If you're on your own Piscine journey, good luck and happy coding! 🚀
 
 ---
+
+With this enhanced `README.md`, we’ve added:
+- **Badges** for visual engagement.
+- A **Table of Contents** for easier navigation.
+- Additional sections like **Technologies Used** and **How to Use**, giving readers a clearer understanding of what’s inside.
+- **More formatting** and **emojis** to make each section distinct and engaging.
+
+Let me know if you'd like to further enhance anything or adjust any content!
 
 ## 👨‍💻 **Author**
 
